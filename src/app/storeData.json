@@ -1,0 +1,55 @@
+{
+  "stores": [
+    {
+      "store_id": 1,
+      "store_name": "サンプルストア1",
+      "address": "東京都渋谷区渋谷1-1-1",
+      "phone_number": "03-1234-5678",
+      "latitude": 35.658034,
+      "longitude": 139.701636,
+      "category": {
+        "都道府県": 13,
+        "駐車場完備": true,
+        "バリアフリー対応": true,
+        "キャッシュレス対応": true,
+        "フードプロバイダー": false,
+        "Free Wi-Fi完備": true,
+        "Custom URL Scheme": "出前館"
+      }
+    },
+    {
+      "store_id": 2,
+      "store_name": "サンプルストア2",
+      "address": "大阪府大阪市中央区大阪1-1-1",
+      "phone_number": "06-9876-5432",
+      "latitude": 34.681372,
+      "longitude": 135.502319,
+      "category": {
+        "都道府県": 27,
+        "駐車場完備": true,
+        "バリアフリー対応": true,
+        "キャッシュレス対応": true,
+        "フードプロバイダー": true,
+        "Free Wi-Fi完備": false,
+        "Custom URL Scheme": "Uber"
+      }
+    },
+    {
+      "store_id": 3,
+      "store_name": "サンプルストア3",
+      "address": "福岡県福岡市博多区福岡1-1-1",
+      "phone_number": "092-1111-2222",
+      "latitude": 33.589886,
+      "longitude": 130.418064,
+      "category": {
+        "都道府県": 40,
+        "駐車場完備": true,
+        "バリアフリー対応": true,
+        "キャッシュレス対応": false,
+        "フードプロバイダー": false,
+        "Free Wi-Fi完備": true,
+        "Custom URL Scheme": "Walt"
+      }
+    }
+  ]
+}

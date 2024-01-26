@@ -1,0 +1,647 @@
+@-webkit-keyframes opacity-sp {
+    0% {
+        opacity: 1
+    }
+
+    25% {
+        opacity: .5
+    }
+
+    50% {
+        opacity: .5
+    }
+
+    75% {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes opacity-sp {
+    0% {
+        opacity: 1
+    }
+
+    25% {
+        opacity: .5
+    }
+
+    50% {
+        opacity: .5
+    }
+
+    75% {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #mainContainer {
+        margin:40px auto;
+        width: 95%;
+        max-width: 1100px
+    }
+
+    #areaFilter #areaFilterTitle {
+        margin-bottom: 1rem
+    }
+
+    #areaFilter #searchCurrentLocationBtn {
+        height: 40px;
+        background-color: #fff;
+        border: 2px solid #ad2724;
+        color: #bc0d19
+    }
+
+    #areaFilter #searchCurrentLocationBtn path {
+        fill: #bc0d19
+    }
+
+    #areaFilter #areaList {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+        grid-gap: 1rem
+    }
+
+    #areaFilter #areaList .area-btn {
+        position: relative;
+        height: 40px;
+        justify-content: center;
+        text-align: center
+    }
+
+    #areaFilter #areaList .area-btn svg {
+        position: absolute;
+        right: 15px
+    }
+
+    #areaFilter .prefecture-list-pc .filter-seperator {
+        overflow: hidden;
+        text-align: center;
+        margin: 1.5rem 0 1rem
+    }
+
+    #areaFilter .prefecture-list-pc .filter-seperator svg {
+        transform: translateX(-50%)
+    }
+
+    #areaFilter .prefecture-list-pc .prefecture-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+        grid-gap: 1rem
+    }
+
+    #areaFilter .prefecture-list-pc .prefecture-btn {
+        height: 32px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+
+    #areaFilter .prefecture-list-sp {
+        display: none
+    }
+
+    .filter-checkbox {
+        margin-top: 28px;
+        border-top: 1px solid rgba(0,0,0,.2)
+    }
+
+    .filter-checkbox .search-key-word .input-key-word input {
+        border: 1px solid #7f7f7f
+    }
+
+    .filter-checkbox .btn-services {
+        display: none
+    }
+
+    .filter-checkbox .list-services .list-services__right {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(185px,1fr))
+    }
+
+    .new-notices {
+        line-height: 13px;
+        border-top: 1px solid rgba(0,0,0,.2)
+    }
+
+    .new-notices,.new-notices .box-news {
+        margin-top: 40px
+    }
+
+    .new-notices .box-news .items-new {
+        margin-bottom: 24px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section-title {
+        color:#434343
+    }
+
+    #mainContainer {
+        width: 92.270531401%;
+        margin: 1.6438rem auto 1rem
+    }
+
+    #areaFilter #areaFilterTitle {
+        margin-bottom: .75rem
+    }
+
+    #areaFilter #searchCurrentLocationBtn {
+        font: normal 16px/24px Hiragino Sans W6;
+        font-weight: 700;
+        border: 1px solid rgba(67,67,67,.08235294117647059);
+        background-color: #bc0d19;
+        color: #fff;
+        height: 48px;
+        margin-bottom: 20px;
+        padding: 7px 12px
+    }
+
+    #areaFilter #searchCurrentLocationBtn path {
+        fill: #fff
+    }
+
+    #areaFilter #areaList .area-btn {
+        margin: .5rem 0 0;
+        padding: 0 12px;
+        width: 100%;
+        height: 28px;
+        justify-content: space-between
+    }
+
+    #areaFilter #areaList .area-btn:first-of-type,#areaFilter .prefecture-list-pc {
+        display: none
+    }
+
+    #areaFilter .prefecture-list-sp {
+        width: 100%
+    }
+
+    #areaFilter .prefecture-list-sp:nth-of-type(2) {
+        display: none
+    }
+
+    #areaFilter .prefecture-list-sp .list-container {
+        margin-top: .5rem
+    }
+
+    #areaFilter .prefecture-list-sp .prefecture-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: .5rem
+    }
+
+    #areaFilter .prefecture-list-sp .prefecture-btn {
+        height: 40px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+
+    .filter-checkbox {
+        margin-top: 20px;
+        border-top: 1px solid rgba(64,108,146,.2)
+    }
+
+    .filter-checkbox .search-key-word .input-key-word input {
+        border: 2px solid rgba(67,67,67,.1607843137254902)
+    }
+
+    .filter-checkbox .search-key-word .input-key-word svg {
+        right: 2px!important
+    }
+
+    .filter-checkbox .search-key-word .title-key-word {
+        margin-top: 20px!important;
+        margin-bottom: 12px!important
+    }
+
+    .filter-checkbox .checkbox-services {
+        margin-top: 20px!important
+    }
+
+    .filter-checkbox .checkbox-services .button-filter {
+        flex-wrap: nowrap!important;
+        margin-top: 24px!important
+    }
+
+    .filter-checkbox .checkbox-services .button-filter .button-filter__clear {
+        margin-right: 6px!important
+    }
+
+    .filter-checkbox .checkbox-services .button-filter .button__search {
+        margin-left: 6px!important
+    }
+
+    .filter-checkbox .checkbox-services .btn-services {
+        transition: opacity .2s ease;
+        min-height: 28px;
+        justify-content: space-between;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        background-color: #7f7f7f;
+        border-radius: 4px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        overflow: hidden;
+        cursor: pointer;
+        margin-bottom: 12px;
+        padding: 0 12px
+    }
+}
+
+@media screen and (max-width: 767px) and (hover:hover) {
+    .filter-checkbox .checkbox-services .btn-services:hover {
+        opacity:.5
+    }
+}
+
+@media screen and (max-width: 767px) and (hover:none) {
+    .filter-checkbox .checkbox-services .btn-services:hover {
+        -webkit-animation-name:opacity-sp;
+        animation-name: opacity-sp;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .filter-checkbox .checkbox-services .btn-services svg {
+        transition:transform .3s
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .filter-checkbox .checkbox-services .btn-services--selected {
+        background-color:#343434
+    }
+
+    .filter-checkbox .checkbox-services .btn-services--selected svg {
+        transform: rotate(-180deg)
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .filter-checkbox .checkbox-services .btn-services span {
+        font:normal 14px/18px Hiragino Sans W6;
+        font-weight: 700
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .filter-checkbox .checkbox-services .list-services {
+        margin-left:0!important;
+        margin-right: 0!important
+    }
+
+    .filter-checkbox .checkbox-services .list-services .list-services__right .services-item {
+        margin-bottom: 12px!important
+    }
+
+    .filter-checkbox .checkbox-services .list-services .list-services__left {
+        display: none
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .new-notices {
+        border-top:1px solid rgba(64,108,146,.2)
+    }
+
+    .new-notices,.new-notices .box-news {
+        margin-top: 20px
+    }
+
+    .new-notices .box-news .items-new {
+        display: block!important;
+        margin-bottom: 16px
+    }
+
+    .new-notices .box-news .items-new .item-new__date {
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .prefecture-list-pc .filter-seperator svg {
+        margin-left:51.3%
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:859px) {
+    .prefecture-list-pc .filter-seperator svg {
+        margin-left:51.8%
+    }
+}
+
+@media screen and (max-width: 331px) {
+    .button-filter .button-filter__clear {
+        width:25%!important
+    }
+
+    .button-filter .button__search {
+        width: 75%!important
+    }
+}
+
+.section-title {
+    font: normal 14px/24px Hiragino Sans W6;
+    font-weight: 700
+}
+
+#areaFilter :not(.section-title) {
+    font: normal 14px/18px Hiragino Sans W6
+}
+
+#areaFilter #searchCurrentLocationBtn {
+    transition: opacity .2s ease;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    font-weight: 700
+}
+
+@media (hover: hover) {
+    #areaFilter #searchCurrentLocationBtn:hover {
+        opacity:.5
+    }
+}
+
+@media (hover: none) {
+    #areaFilter #searchCurrentLocationBtn:hover {
+        -webkit-animation-name:opacity-sp;
+        animation-name: opacity-sp;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s
+    }
+}
+
+#areaFilter #areaList .area-btn {
+    transition: opacity .2s ease;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #7f7f7f;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    cursor: pointer
+}
+
+@media (hover: hover) {
+    #areaFilter #areaList .area-btn:hover {
+        opacity:.5
+    }
+}
+
+@media (hover: none) {
+    #areaFilter #areaList .area-btn:hover {
+        -webkit-animation-name:opacity-sp;
+        animation-name: opacity-sp;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s
+    }
+}
+
+#areaFilter #areaList .area-btn--selected {
+    background-color: #343434
+}
+
+#areaFilter #areaList .area-btn--selected svg {
+    transform: rotate(-180deg)
+}
+
+#areaFilter #areaList .area-btn svg {
+    transition: transform .3s
+}
+
+#areaFilter #areaList .area-btn span {
+    font-weight: 700
+}
+
+#areaFilter .prefecture-list-pc .prefecture-btn,#areaFilter .prefecture-list-sp .prefecture-btn {
+    color: #000;
+    background-color: #eee;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    font-weight: 700;
+    transition: color .2s ease
+}
+
+@media (hover: hover) {
+    #areaFilter .prefecture-list-pc .prefecture-btn:hover,#areaFilter .prefecture-list-sp .prefecture-btn:hover {
+        color:#000;
+        opacity: .5
+    }
+}
+
+@media (hover: none) {
+    #areaFilter .prefecture-list-pc .prefecture-btn:hover,#areaFilter .prefecture-list-sp .prefecture-btn:hover {
+        -webkit-animation-name:opacity-sp;
+        animation-name: opacity-sp;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s
+    }
+}
+
+.filter-checkbox {
+    font-size: 14px;
+    width: 100%
+}
+
+.filter-checkbox .search-key-word {
+    margin-top: 28px
+}
+
+.filter-checkbox .search-key-word .title-key-word {
+    margin-bottom: 16px;
+    letter-spacing: .22px;
+    opacity: 1
+}
+
+.filter-checkbox .search-key-word .input-key-word {
+    position: relative;
+    width: 100%
+}
+
+.filter-checkbox .search-key-word .input-key-word input {
+    width: 100%;
+    height: 40px;
+    background: #fff no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 14px 0 14px 12px
+}
+
+.filter-checkbox .search-key-word .input-key-word svg {
+    position: absolute;
+    top: 10px;
+    right: 1px;
+    display: none;
+    cursor: pointer;
+    background-color: #fff
+}
+
+.filter-checkbox .checkbox-services {
+    margin-top: 40px
+}
+
+.filter-checkbox .checkbox-services .title-key-word {
+    margin-bottom: 24px
+}
+
+.filter-checkbox .checkbox-services .list-services .list-services__left {
+    max-width: 16%!important;
+}
+
+.filter-checkbox .checkbox-services .list-services .list-services__right .services-item {
+    display: flex;
+    align-items: center
+}
+
+.filter-checkbox .checkbox-services .list-services .list-services__right .services-item .checkbox-item-services {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.filter-checkbox .checkbox-services .list-services .list-services__right .services-item .title-service svg {
+    margin-right: 11px;
+    opacity: 0.1;
+    min-width: 20px;
+    cursor: pointer
+}
+
+.filter-checkbox .checkbox-services .list-services .list-services__right .services-item .title-service span {
+    cursor: pointer;
+    color: #000
+}
+
+.filter-checkbox .checkbox-services .button-filter {
+    margin-top: 45px;
+    flex-wrap: wrap
+}
+
+.filter-checkbox .checkbox-services .button-filter .button-filter__clear {
+    color: #000;
+    background: #eee;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: opacity .2s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+    height: 40px;
+    margin-right: 10px;
+    font: normal 14px/18px Hiragino Sans W6;
+    font-weight: 700
+}
+
+@media (hover: hover) {
+    .filter-checkbox .checkbox-services .button-filter .button-filter__clear:hover {
+        opacity:.5
+    }
+}
+
+@media (hover: none) {
+    .filter-checkbox .checkbox-services .button-filter .button-filter__clear:hover {
+        -webkit-animation-name:opacity-sp;
+        animation-name: opacity-sp;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s
+    }
+}
+
+.filter-checkbox .checkbox-services .button-filter .button__search {
+    color: #fff;
+    background: #bc0d19;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: opacity .2s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 262px;
+    height: 40px;
+    margin-left: 10px;
+    font: normal 14px/18px Hiragino Sans W6;
+    font-weight: 700
+}
+
+@media (hover: hover) {
+    .filter-checkbox .checkbox-services .button-filter .button__search:hover {
+        opacity:.5
+    }
+}
+
+@media (hover: none) {
+    .filter-checkbox .checkbox-services .button-filter .button__search:hover {
+        -webkit-animation-name:opacity-sp;
+        animation-name: opacity-sp;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s
+    }
+}
+
+.new-notices {
+    font-size: 14px;
+    width: 100%
+}
+
+.new-notices .box-news .items-new .item-new__date {
+    margin-right: 40px;
+    color: #7b7b7b
+}
+
+.new-notices .box-news .items-new .item-new__title a {
+    color: #000!important
+}
+
+.new-notices .box-news .items-new .item-new__title a svg {
+    transform: rotate(270deg);
+    margin-left: 8px
+}
+
+.mb__01-rem {
+    margin-bottom: .1rem
+}
